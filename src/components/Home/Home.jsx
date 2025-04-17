@@ -104,7 +104,7 @@ function Home(){
     <button onClick={addCard}
     className='m-2 px-3 poppins-medium py-2 ring-0 w-[90%] text-white bg-orange-600 hover:bg-orange-700 rounded-full' >Add card</button>
     </div>
-    <div className='flex md:flex-row  gap-2 md:gap-3 md:ml-5 flex-wrap w-[100vw] md:w-[70vw] h-[35vh]  md:h-[80vh] overflow-y-scroll'
+    <div className='flex md:flex-row justify-center md:justify-normal gap-2 md:gap-3 md:ml-5 flex-wrap w-[100vw] md:w-[70vw] h-[35vh]  md:h-[80vh] overflow-y-scroll'
     >{recent_cards.map(card => (
       <Card key={card.id} id={card.id} date={card.date} message={card.message} deleteCard={deleteCard} />
     ))}
