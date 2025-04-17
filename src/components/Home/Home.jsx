@@ -19,7 +19,7 @@ function Card({id,date,message,deleteCard}) {
         />
         </div> 
        
-        <div className='text-[20px] h-full md:h-[23vh] nunito-600 text-ellipsis hover:overflow-y-scroll transition-all duration-600 px-3 pb-4 backdrop-blur-lg  bg-transparent  '>
+        <div className='text-[20px] h-full  nunito-600 hover:overflow-y-scroll transition-all duration-600 px-3 pb-4 backdrop-blur-lg  bg-transparent  '>
         {message}
         </div>
       </div>
