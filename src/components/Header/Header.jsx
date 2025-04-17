@@ -26,8 +26,8 @@ function Header() {
     <>
     <nav
     className='w-[100vw] h-[15vh] md:h-[10vh] px-2 md:py-2 flex justify-evenly md:justify-around items-center flex-wrap   bg-opacity-50 bg-zinc-400  backdrop-blur-lg sticky top-0 left-0 z-50'>
-        <img src="public/logo.jpg" alt="Logo" className='w-16 md:w-20 brightness-125 backdrop-blur-md rounded-lg' />
-        <div className='flex   justify-around md:w-[20vw]'>
+        <img src="/logo.jpeg" alt="Logo" className='w-16 md:w-20 brightness-125 backdrop-blur-md rounded-lg' />
+        <div className='flex justify-around md:w-[20vw]'>
         
         <NavLink
         to='/home' end 
