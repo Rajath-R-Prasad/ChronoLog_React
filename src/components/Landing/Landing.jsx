@@ -5,8 +5,8 @@ function Landing() {
   return (
     <>
     <div
-    className='h-lvh w-lvw flex flex-col justify-center items-center backdrop-brightness-75 bg-orange-300 md:bg-[url("src/assets/desktop_background.jpg")] bg-cover bg-fixed bg-center'>
-    <img src="src/assets/a-minimalist-logo-for-chrono-log-featuri_OyvDbxRBRKeufB-Qk2jxMw_03WPbujtR0mt9uqYrd9JVA.jpeg" alt="logo" 
+    className='h-lvh w-lvw flex flex-col justify-center items-center backdrop-brightness-75  bg-[url("/vertical_background.jpg")] md:bg-[url("/desktop_background")] bg-cover bg-fixed bg-center'>
+    <img src="public/logo.jpg" alt="logo" 
     className='w-[200px] md:w-[350px] rounded-t-full mix-blend-darken backdrop-blur-lg '/>
     <h1
     className='text-2xl md:text-4xl w-[200px] md:w-[350px] text-sky-950 font-semibold backdrop-blur-lg font-serif px-4 py-2 m-3 '>"Capture your thoughts one day at a time"</h1>
