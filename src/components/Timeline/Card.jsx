@@ -77,23 +77,28 @@ function TimelineCard(){
     setCards(prevCards => prevCards.filter(card => card.id !== id));
   };
   
+  const parseDate = (dateStr) => {
+    const [day, month, year] = dateStr.split('/');
+    return new Date(year, month - 1, day);
+  };
+  const sortedCards = [...cards].sort(
+    (a, b) => parseDate(a.date) - parseDate(b.date)
+  );
+  return(
+    <>
+      <div className='flex flex-row gap-3 mt-1 md:p-5 flex-wrap w-[90vw] h-[70vh] md:h-[80vh] overflow-y-scroll'>
+        {sortedCards.map(card => (
+          <Card key={card.id} id={card.id} date={card.date} message={card.message} deleteCard={deleteCard} />
+        ))}
+      </div>
+    </>
+  )
+}
   
     
  
   
-  return(
-    <>
-    <div className='flex flex-row gap-3 mt-1 md:p-5 flex-wrap w-[90vw] h-[70vh] md:h-[80vh] overflow-y-scroll'
-    >
-        {cards.map(card => (
-        <Card key={card.id} id={card.id} date={card.date} message={card.message} deleteCard={deleteCard} />
-    ))}
-    </div>
-    </>
-        
-    )
-  }
-  
+ 
   export default TimelineCard
 
     
